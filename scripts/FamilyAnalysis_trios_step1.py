@@ -35,7 +35,7 @@ args = parser.parse_args()
 
 # Create spark session
 spark = (
-    pyspark.sql.SparkSession.builder.appName("PythonPi")
+    pyspark.sql.SparkSession.builder.appName("FamilyAnalysis_trios_step1")
     .getOrCreate()
     )
 # Register so that glow functions like read vcf work with spark. Must be run in spark shell or in context described in help
